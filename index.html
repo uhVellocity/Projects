@@ -1,0 +1,101 @@
+<!--CSS summative
+    Raman Kalsi -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="home.css">
+<title>Chess Club</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="">About</a>
+  <a href="#">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+    
+ <center><img src="chess.png" alt="Avatar" class="logo"></center>
+    
+    
+<script>
+function myFunction( ) {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}    
+</script>
+<div class="content">
+  <h2>Jean Augustine Secondary School Chess Club</h2>
+  <p>Official chess club for Jean Augustine Secondary School</p>
+</div>
+    <br>
+    <br>
+    
+<center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></center>
+    <center><a href="signup.html"><button class="button">Sign-up</button></a></center>
+<br>
+<br>
+<br>
+<br>
+<hr class="style1">
+<br>
+<div class="row">
+  <div class="column">
+<!-- Text can be placed here for final product, this assignement is only for the login page and home page-->
+  </div>
+  <div class="column">
+<h1>“Chess holds its master in its own bonds, shackling the mind and brain so that the inner freedom of the very strongest must suffer.” – Albert Einstein</h1>
+  </div>
+  <div class="column">
+<!-- Text can be placed here for final product, this assignement is only for the login page and home page-->
+  </div>
+</div>
+    <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="chess.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+    
+
+<div class="footer">  
+
+</div>
+    </div>
+</body>
+</html>
