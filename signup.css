@@ -178,7 +178,7 @@ button:hover {
     
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -186,7 +186,7 @@ button:hover {
     top: 0;
   }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 414px) {
         body {
             background-color: firebrick;
             
